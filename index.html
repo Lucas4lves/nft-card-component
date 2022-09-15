@@ -52,12 +52,24 @@
       align-self: center;
     }
 
+    .active {
+      mask-image: url(./images/icon-view.svg);
+      mask-size: contain;
+      mask-position: center;
+      cursor: pointer;
+    }
+
     .main__nft-card--title {
       margin-top: 1em; 
       text-align: left;
       font-size: 18px;
       font-weight: 600;
       color: hsl(0, 0%, 100%);
+    }
+
+    .main__nft-card--title:hover { 
+      color: hsl(178, 100%, 50%);
+      cursor: pointer; 
     }
 
     .main__nft-card--flavor { 
@@ -112,6 +124,11 @@
     .main__nft-card--author > b { 
       color:  hsl(0, 0%, 100%);
       margin-left: .3em;
+    }
+
+    .main__nft-card--author > b:hover { 
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
     }
 
     .main__nft-card--avatar { 
@@ -194,4 +211,5 @@
   </div>
 </body>
 <script src="./footer.js"></script>
+<script src="./script.js"></script>
 </html>
